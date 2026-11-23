@@ -1,93 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page (Tailwind CSS)</title>
 
-    <link href="./src/output.css" rel="stylesheet">
-</head>
-<body>
-    <nav>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="p-8 flex justify-center">
+      <section class="flex justify-between gap-4 max-w-full w-full">
         <h1>Luma</h1>
 
-        <section>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </section>
+        <div class="flex gap-8 w-fit">
+          <a href="/">Shop</a>
+          <a href="/">Kollektionen</a>
+          <a href="/">Über uns</a>
+          <a href="/">Kontak</a>
+        </div>
 
-        <section>
-            <img src="" alt="">
-            <p>2</p>
-        </section>
+        <div class="flex justify-center items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart preview-icon"
+          >
+            <path
+              d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"
+            />
+            <path
+              d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"
+            />
+            <circle cx="18" cy="20" r="2" />
+            <circle cx="8" cy="20" r="2" />
+          </svg>
+          <p>2</p>
+        </div>
+      </section>
     </nav>
 
     <header>
-        <section>
-            <span><a href="">Shop</a> / <a href="">Leuchten</a> / <a href="">Tischlampe Nova</a></span>
-        </section>
+      <section>
+        <span
+          ><a href="">Shop</a> / <a href="">Leuchten</a> /
+          <a href="">Tischlampe Nova</a></span
+        >
+      </section>
 
-        <section>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div>
-                <p>Neu</p>
-                <h2>Tischlampe Nova</h2>
-                <span><p>89</p><p>€</p></span>
-                <p>Eine schlichte Tischlampe mit weichem, warmem Licht. [Productbeschreibung heir einfügen]</p>
-                <form>
-                    <label for="color"><span><p>Farbe:</p><p>Sand</p></span></label>
-                    <fieldset id="color">
-                        <input type="radio" value="sand" name="color" id="color">
-                        <input type="radio" value="black" name="color" id="color">
-                        <input type="radio" value="light-green" name="color" id="color">
-                    </fieldset>
-                    <input type="number" name="quantity" id="quantity">
-                    <button type="submit">In den Warenkorb</button>
-                </form>
-                <hr>
-                <div>
-                    <p>Kostenloser Versand ab [Beitrag] €</p>
-                    <p>30 Tage Rückgabe</p>
-                    <p>2 Jahre Garantie</p>
-                </div>
-            </div>
-        </section>
+      <section>
+        <div>
+          <img src="" alt="" />
+          <div>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div>
+          <p>Neu</p>
+          <h2>Tischlampe Nova</h2>
+          <span
+            ><p>89</p>
+            <p>€</p></span
+          >
+          <p>
+            Eine schlichte Tischlampe mit weichem, warmem Licht.
+            [Productbeschreibung heir einfügen]
+          </p>
+          <form>
+            <label for="color"
+              ><span
+                ><p>Farbe:</p>
+                <p>Sand</p></span
+              ></label
+            >
+            <fieldset id="color">
+              <input type="radio" value="sand" name="color" id="color" />
+              <input type="radio" value="black" name="color" id="color" />
+              <input type="radio" value="light-green" name="color" id="color" />
+            </fieldset>
+            <input type="number" name="quantity" id="quantity" />
+            <button type="submit">In den Warenkorb</button>
+          </form>
+          <hr />
+          <div>
+            <p>Kostenloser Versand ab [Beitrag] €</p>
+            <p>30 Tage Rückgabe</p>
+            <p>2 Jahre Garantie</p>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
-        <h2>Eigenschaften</h2>
-        <section>
-            <article>
-                <h3>Warmes Licht</h3>
-                <p>[Kurzer Text zur Lichtfarbe und Helligkeit]</p>
-            </article>
-            <article>
-                <h3>Hochwertiges Material</h3>
-                <p>[Kurzer Text zu Material und Verarbeitung]</p>
-            </article>
-            <article>
-                <h3>Einfache Bedienung</h3>
-                <p>[Kurzer Text zu Schalter und Dimmer]</p>
-            </article>
-        </section>
+      <h2>Eigenschaften</h2>
+      <section>
+        <article>
+          <h3>Warmes Licht</h3>
+          <p>[Kurzer Text zur Lichtfarbe und Helligkeit]</p>
+        </article>
+        <article>
+          <h3>Hochwertiges Material</h3>
+          <p>[Kurzer Text zu Material und Verarbeitung]</p>
+        </article>
+        <article>
+          <h3>Einfache Bedienung</h3>
+          <p>[Kurzer Text zu Schalter und Dimmer]</p>
+        </article>
+      </section>
     </main>
     <footer>
-        <p>&#169; luma</p>
-        <section>
-            <a href="/">Impressum</a>
-            <a href="/">Datenschutz</a>
-            <a href="/">AGB</a>
-        </section>
+      <p>&#169; luma</p>
+      <section>
+        <a href="/">Impressum</a>
+        <a href="/">Datenschutz</a>
+        <a href="/">AGB</a>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
