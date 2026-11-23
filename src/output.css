@@ -299,6 +299,14 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  @media (hover: hover) {
+    .hover\:cursor-pointer:hover {
+      cursor: pointer;
+    }
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+  }
 }
 @property --tw-border-style {
   syntax: "*";
