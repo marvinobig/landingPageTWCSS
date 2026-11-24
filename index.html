@@ -6,9 +6,11 @@
     <title>Landing Page (Tailwind CSS)</title>
 
     <link href="./src/output.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/svg+xml" href="./src/assets/logo/favicon.svg" />
   </head>
-  <body>
-    <nav class="p-8 flex justify-center">
+  <body class="bg-stone-50 text-stone-900 font-sans antialiased">
+    <nav class="p-8 flex justify-center bg-white">
       <section class="flex justify-between gap-4 max-w-full w-full">
         <h1 class="text-2xl font-bold uppercase">Luma</h1>
 
@@ -48,26 +50,48 @@
       </section>
     </nav>
 
-    <header class="flex gap-6">
-      <section>
-        <div>
-          <span class="text-gray-500"
-            ><a href="/" class="hover:underline">Shop</a> /
-            <a href="/" class="hover:underline">Leuchten</a> /
-            <a href="/" class="text-black hover:underline"
-              >Tischlampe Nova</a
-            ></span
-          >
-          <img src="" alt="" />
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+    <header class="flex flex-col gap-6">
+      <span class="text-gray-500 mt-5"
+        ><a href="/" class="hover:underline">Shop</a> /
+        <a href="/" class="hover:underline">Leuchten</a> /
+        <a href="/" class="text-black hover:underline">Tischlampe Nova</a></span
+      >
+      <section class="flex gap-8">
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-4 w-full max-w-150">
+            <img
+              class="h-auto w-full object-cover rounded-lg"
+              src="./src/assets/images/lamp-charcoal-front.svg"
+              alt="lamp"
+            />
+            <div class="grid grid-cols-4 gap-4">
+              <img
+                class="h-auto w-full object-cover rounded-lg"
+                src="./src/assets/images/lamp-sage-front.svg"
+                alt="lamp sage"
+              />
+              <img
+                class="h-auto w-full object-cover rounded-lg"
+                src="./src/assets/images/lamp-sand-base-closeup.svg"
+                alt="lamp closeup"
+              />
+              <img
+                class="h-auto w-full object-cover rounded-lg"
+                src="./src/assets/images/lamp-sand-shade-closeup.svg"
+                alt="lamp shade closeup"
+              />
+              <img
+                class="h-auto w-full object-cover rounded-lg"
+                src="./src/assets/images/lamp-sand-lit.svg"
+                alt="lamp lit"
+              />
+            </div>
           </div>
         </div>
         <div>
-          <p>Neu</p>
+          <p class="bg-amber-100 text-amber-800 w-fit py-1 px-3 rounded-2xl">
+            Neu
+          </p>
           <h2>Tischlampe Nova</h2>
           <span
             ><p>89</p>
@@ -90,7 +114,7 @@
               <input type="radio" value="light-green" name="color" id="color" />
             </fieldset>
             <input type="number" name="quantity" id="quantity" />
-            <button type="submit">In den Warenkorb</button>
+            <button class="rounded-md bg-black text-white py-2 px-6" type="submit">In den Warenkorb</button>
           </form>
           <hr />
           <div>
@@ -119,7 +143,7 @@
         </article>
       </section>
     </main>
-    <footer class="flex justify-between p-8">
+    <footer class="flex justify-between p-8 bg-white">
       <p>&#169; luma</p>
       <section class="flex gap-8">
         <a href="/" class="hover:underline">Impressum</a>
