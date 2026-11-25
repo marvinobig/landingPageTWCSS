@@ -7,7 +7,11 @@
 
     <link href="./src/output.css" rel="stylesheet" />
 
-    <link rel="icon" type="image/svg+xml" href="./src/assets/logo/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/logo/favicon.svg"
+    />
   </head>
   <body class="bg-stone-50 text-stone-900 font-sans antialiased">
     <nav class="p-8 flex justify-center bg-white">
@@ -58,7 +62,7 @@
       >
       <section class="flex gap-8">
         <div class="flex flex-col gap-8">
-          <div class="flex flex-col gap-4 w-full max-w-150">
+          <div class="flex flex-col gap-4 w-full max-w-180">
             <img
               class="h-auto w-full object-cover rounded-lg"
               src="./src/assets/images/lamp-charcoal-front.svg"
@@ -108,15 +112,55 @@
                 <p>Sand</p></span
               ></label
             >
-            <fieldset id="color">
-              <input type="radio" value="sand" name="color" id="color" />
-              <input type="radio" value="black" name="color" id="color" />
-              <input type="radio" value="light-green" name="color" id="color" />
-            </fieldset>
-            <input type="number" name="quantity" id="quantity" />
-            <button class="rounded-md bg-black text-white py-2 px-6" type="submit">In den Warenkorb</button>
+            <div class="flex gap-3">
+                <input type="radio" name="color" value="Sand" aria-label="Sand" checked
+                  class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-stone-300 checked:border-stone-900 cursor-pointer">
+              
+                <input type="radio" name="color" value="Anthrazit" aria-label="Anthrazit"
+                  class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-stone-700 checked:border-stone-900 cursor-pointer">
+              
+                <input type="radio" name="color" value="Salbei" aria-label="Salbei"
+                  class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-[#a8b5a0] checked:border-stone-900 cursor-pointer">
+              </div>
+            <div
+              class="flex h-14 items-center rounded-lg border border-stone-300 bg-white focus-within:ring-2 focus-within:ring-stone-900 w-fit"
+            >
+              <button
+                type="button"
+                id="qty-dec"
+                aria-label="Menge verringern"
+                class="h-full w-12 text-xl text-stone-900 hover:bg-stone-100 rounded-l-lg"
+              >
+                −
+              </button>
+
+              <input
+                id="qty"
+                type="number"
+                min="1"
+                max="9"
+                value="1"
+                aria-label="Menge"
+                class="w-10 bg-transparent text-center font-medium text-stone-900 focus:outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              />
+
+              <button
+                type="button"
+                id="qty-inc"
+                aria-label="Menge erhöhen"
+                class="h-full w-12 text-xl text-stone-900 hover:bg-stone-100 rounded-r-lg"
+              >
+                +
+              </button>
+            </div>
+            <button
+              class="rounded-md bg-black text-white py-2 px-6"
+              type="submit"
+            >
+              In den Warenkorb
+            </button>
           </form>
-          <hr />
+          <hr class="border border-stone-200 my-6" />
           <div>
             <p>Kostenloser Versand ab [Beitrag] €</p>
             <p>30 Tage Rückgabe</p>
@@ -127,17 +171,23 @@
     </header>
 
     <main>
-      <h2>Eigenschaften</h2>
-      <section>
-        <article>
+      <h2 class="my-4">Eigenschaften</h2>
+      <section class="flex gap-4 flex-wrap">
+        <article
+          class="bg-white border border-stone-200 p-4 rounded-md w-full max-w-90"
+        >
           <h3>Warmes Licht</h3>
           <p>[Kurzer Text zur Lichtfarbe und Helligkeit]</p>
         </article>
-        <article>
+        <article
+          class="bg-white border border-stone-200 p-4 rounded-md w-full max-w-90"
+        >
           <h3>Hochwertiges Material</h3>
           <p>[Kurzer Text zu Material und Verarbeitung]</p>
         </article>
-        <article>
+        <article
+          class="bg-white border border-stone-200 p-4 rounded-md w-full max-w-90"
+        >
           <h3>Einfache Bedienung</h3>
           <p>[Kurzer Text zu Schalter und Dimmer]</p>
         </article>
