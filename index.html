@@ -13,10 +13,10 @@
       href="./src/assets/logo/favicon.svg"
     />
   </head>
-  <body class="bg-stone-50 text-stone-900 font-sans antialiased">
+  <body class="flex min-h-screen flex-col bg-stone-50 text-stone-900 font-sans antialiased">
     <nav class="p-8 flex justify-center bg-white">
       <section class="flex justify-between gap-4 max-w-full w-full">
-        <h1 class="text-2xl font-bold uppercase">Luma</h1>
+        <h1 class="text-2xl font-bold tracking-[0.2em] uppercase">Luma</h1>
 
         <div class="flex gap-8 w-fit">
           <a href="/" class="hover:underline">Shop</a>
@@ -93,76 +93,78 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="space-y-1">
             <p class="bg-amber-100 text-amber-800 w-fit py-1 px-3 rounded-2xl">
               Neu
             </p>
-            <h2>Tischlampe Nova</h2>
+            <h2 class="text-4xl font-bold mt-4">Tischlampe Nova</h2>
             <span
-              ><p>89</p>
+            class="flex gap-2 text-3xl font-semibold"><p>89</p>
               <p>€</p></span
             >
-            <p>
+            <p class="text-lg leading-relaxed text-stone-600">
               Eine schlichte Tischlampe mit weichem, warmem Licht.
               [Productbeschreibung heir einfügen]
             </p>
             <form>
-              <label for="color"
-                ><span
+              <div class="flex flex-col gap-2 my-6">
+                <label class="flex gap-2 text-sm font-semibold" for="color"
                   ><p>Farbe:</p>
-                  <p>Sand</p></span
-                ></label
-              >
-              <div class="flex gap-3">
-                  <input type="radio" name="color" value="Sand" aria-label="Sand" checked
-                    class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-stone-300 checked:border-stone-900 cursor-pointer">
-                
-                  <input type="radio" name="color" value="Anthrazit" aria-label="Anthrazit"
-                    class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-stone-700 checked:border-stone-900 cursor-pointer">
-                
-                  <input type="radio" name="color" value="Salbei" aria-label="Salbei"
-                    class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-[#a8b5a0] checked:border-stone-900 cursor-pointer">
+                    <p>Sand</p></label
+                >
+                <div class="flex gap-3">
+                    <input type="radio" name="color" value="Sand" aria-label="Sand" checked
+                      class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-stone-300 checked:border-stone-900 cursor-pointer">
+                  
+                    <input type="radio" name="color" value="Anthrazit" aria-label="Anthrazit"
+                      class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-stone-700 checked:border-stone-900 cursor-pointer">
+                  
+                    <input type="radio" name="color" value="Salbei" aria-label="Salbei"
+                      class="size-14 appearance-none rounded-full border-2 border-stone-300 bg-[#a8b5a0] checked:border-stone-900 cursor-pointer">
+                  </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="flex h-14 items-center rounded-lg border border-stone-300 bg-white focus-within:ring-2 focus-within:ring-stone-900 w-fit"
+                >
+                  <button
+                    type="button"
+                    id="qty-dec"
+                    aria-label="Menge verringern"
+                    class="h-full w-12 text-xl text-stone-900 hover:bg-stone-100 rounded-l-lg"
+                  >
+                    −
+                  </button>
+    
+                  <input
+                    id="qty"
+                    type="number"
+                    min="1"
+                    max="9"
+                    value="1"
+                    aria-label="Menge"
+                    class="w-10 bg-transparent text-center font-medium text-stone-900 focus:outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                  />
+    
+                  <button
+                    type="button"
+                    id="qty-inc"
+                    aria-label="Menge erhöhen"
+                    class="h-full w-12 text-xl text-stone-900 hover:bg-stone-100 rounded-r-lg"
+                  >
+                    +
+                  </button>
                 </div>
-              <div
-                class="flex h-14 items-center rounded-lg border border-stone-300 bg-white focus-within:ring-2 focus-within:ring-stone-900 w-fit"
-              >
                 <button
-                  type="button"
-                  id="qty-dec"
-                  aria-label="Menge verringern"
-                  class="h-full w-12 text-xl text-stone-900 hover:bg-stone-100 rounded-l-lg"
+                  class="flex-1 rounded-lg bg-stone-900 text-white text-base font-semibold py-3.5 hover:bg-stone-800 cursor-pointer"
+                  type="submit"
                 >
-                  −
-                </button>
-  
-                <input
-                  id="qty"
-                  type="number"
-                  min="1"
-                  max="9"
-                  value="1"
-                  aria-label="Menge"
-                  class="w-10 bg-transparent text-center font-medium text-stone-900 focus:outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
-                />
-  
-                <button
-                  type="button"
-                  id="qty-inc"
-                  aria-label="Menge erhöhen"
-                  class="h-full w-12 text-xl text-stone-900 hover:bg-stone-100 rounded-r-lg"
-                >
-                  +
+                  In den Warenkorb
                 </button>
               </div>
-              <button
-                class="rounded-md bg-black text-white py-2 px-6"
-                type="submit"
-              >
-                In den Warenkorb
-              </button>
             </form>
-            <hr class="border border-stone-200 my-6" />
-            <div>
+            <hr class="border-t border-stone-200 my-6" />
+            <div class="text-sm text-stone-600 space-y-3">
               <p>Kostenloser Versand ab [Beitrag] €</p>
               <p>30 Tage Rückgabe</p>
               <p>2 Jahre Garantie</p>
@@ -172,33 +174,33 @@
       </header>
   
       <main>
-        <h2 class="my-4">Eigenschaften</h2>
+        <h2 class="my-4 text-2xl font-semibold">Eigenschaften</h2>
         <section class="flex gap-4 flex-wrap">
           <article
-            class="bg-white border border-stone-200 p-4 rounded-md w-full max-w-90"
+            class="bg-white border border-stone-200 p-6 rounded-md w-full max-w-90"
           >
-            <h3>Warmes Licht</h3>
-            <p>[Kurzer Text zur Lichtfarbe und Helligkeit]</p>
+            <h3 class="text-lg font-semibold">Warmes Licht</h3>
+            <p class="text-sm text-stone-500 mt-2">[Kurzer Text zur Lichtfarbe und Helligkeit]</p>
           </article>
           <article
-            class="bg-white border border-stone-200 p-4 rounded-md w-full max-w-90"
+            class="bg-white border border-stone-200 p-6 rounded-md w-full max-w-90"
           >
-            <h3>Hochwertiges Material</h3>
-            <p>[Kurzer Text zu Material und Verarbeitung]</p>
+            <h3 class="text-lg font-semibold">Hochwertiges Material</h3>
+            <p class="text-sm text-stone-500 mt-2">[Kurzer Text zu Material und Verarbeitung]</p>
           </article>
           <article
-            class="bg-white border border-stone-200 p-4 rounded-md w-full max-w-90"
+            class="bg-white border border-stone-200 p-6 rounded-md w-full max-w-90"
           >
-            <h3>Einfache Bedienung</h3>
-            <p>[Kurzer Text zu Schalter und Dimmer]</p>
+            <h3 class="text-lg font-semibold">Einfache Bedienung</h3>
+            <p class="text-sm text-stone-500 mt-2">[Kurzer Text zu Schalter und Dimmer]</p>
           </article>
         </section>
       </main>
     </div>
 
-    <footer class="flex justify-between p-8 bg-white">
-      <p>&#169; luma</p>
-      <section class="flex gap-8">
+    <footer class="flex flex-col md:flex-row justify-between p-8 bg-white mt-auto">
+      <p class="uppercase">&#169; luma</p>
+      <section class="flex gap-2 md:gap-8 flex-col md:flex-row">
         <a href="/" class="hover:underline">Impressum</a>
         <a href="/" class="hover:underline">Datenschutz</a>
         <a href="/" class="hover:underline">AGB</a>
