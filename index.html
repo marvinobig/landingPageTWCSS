@@ -15,10 +15,10 @@
   </head>
   <body class="flex min-h-screen flex-col bg-stone-50 text-stone-900 font-sans antialiased">
     <nav class="p-8 flex justify-center bg-white">
-      <section class="flex justify-between gap-4 max-w-full w-full">
+      <section class="flex flex-col sm:flex-row justify-between items-center gap-4 max-w-full w-full">
         <h1 class="text-2xl font-bold tracking-[0.2em] uppercase">Luma</h1>
 
-        <div class="flex gap-8 w-fit">
+        <div class="flex flex-col sm:flex-row items-center gap-8 w-fit">
           <a href="/" class="hover:underline">Shop</a>
           <a href="/" class="hover:underline">Kollektionen</a>
           <a href="/" class="hover:underline">Über uns</a>
@@ -62,7 +62,7 @@
           <a href="/" class="text-black hover:underline">Tischlampe Nova</a></span
         >
         <section class="flex flex-col lg:flex-row gap-8">
-          <div class="flex flex-col flex-1 gap-8 max-w-180">
+          <div class="flex flex-col flex-1 gap-8 lg:max-w-180">
             <div class="flex flex-col gap-4 w-full">
               <img
                 class="h-auto w-full object-cover rounded-lg"
@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="space-y-1">
+          <div class="space-y-1 max-w-130">
             <p class="bg-amber-100 text-amber-800 w-fit py-1 px-3 rounded-2xl">
               Neu
             </p>
@@ -175,7 +175,7 @@
   
       <main>
         <h2 class="my-4 text-2xl font-semibold">Eigenschaften</h2>
-        <section class="flex gap-4 flex-wrap">
+        <section class="flex gap-2 flex-wrap min-w-full">
           <article
             class="bg-white border border-stone-200 p-6 rounded-md w-full max-w-90"
           >
@@ -198,9 +198,9 @@
       </main>
     </div>
 
-    <footer class="flex flex-col md:flex-row justify-between p-8 bg-white mt-auto">
+    <footer class="flex flex-col md:flex-row items-center justify-between p-8 bg-white mt-auto">
       <p class="uppercase">&#169; luma</p>
-      <section class="flex gap-2 md:gap-8 flex-col md:flex-row">
+      <section class="flex gap-2 md:gap-8 items-center flex-col md:flex-row">
         <a href="/" class="hover:underline">Impressum</a>
         <a href="/" class="hover:underline">Datenschutz</a>
         <a href="/" class="hover:underline">AGB</a>
