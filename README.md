@@ -10,7 +10,7 @@ Ein Lernprojekt, um Tailwind CSS zu üben und zu zeigen, wie ich ein Design in s
 
 **Meine Umsetzung**
 
-![Screenshot der fertigen Produktseite](./src/assets/ergebnis.png)
+![Screenshot der fertigen Produktseite](./src/assets/projekt-ergebnis.png)
 
 ## Was ich geübt habe
 
