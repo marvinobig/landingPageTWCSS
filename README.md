@@ -6,11 +6,11 @@ Ein Lernprojekt, um Tailwind CSS zu üben und zu zeigen, wie ich ein Design in s
 
 **Ursprüngliches Design**
 
-![Ursprüngliches Design der Produktseite](./src/assets/Produktseite Lampe.png)
+![Ursprüngliches Design der Produktseite](./src/assets/design.png)
 
 **Meine Umsetzung**
 
-![Screenshot der fertigen Produktseite](./src/assets/Screenshot 2026-11-26 225107.png)
+![Screenshot der fertigen Produktseite](./src/assets/ergebnis.png)
 
 ## Was ich geübt habe
 
